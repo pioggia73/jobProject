@@ -1,0 +1,37 @@
+.hero {
+  max-width: 130rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 6rem;
+  column-gap: 6rem;
+  //height: calc(100vh - 5rem);
+
+  &_text {
+    color: $color-grey-dark;
+    font-size: 1.1rem;
+    line-height: 1.5;
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &_img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+// below 900px
+
+@media (max-width: 57em) {
+  .hero {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+    padding: 3rem 2rem;
+  }
+}
+
